@@ -1,0 +1,17 @@
+*********************** Enquiry Details Table *************************
+CREATE TABLE Candidate_Detail (
+applyId Number Primary Key , 
+firstName Varchar2(20), 
+lastName varchar2(20), 
+contactNo Number(10), 
+email Varchar2(30), 
+aggregate number(5,2),
+stream varchar2(25));
+************************ Sequence Script **********************************
+CREATE SEQUENCE apply_id_seq
+MINVALUE 1000
+MAXVALUE 99999
+START WITH 1001
+INCREMENT BY 1
+NOCACHE;
+
